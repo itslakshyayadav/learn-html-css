@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>html forms</title>
+
+    <style>
+      body {
+        background-color: cadetblue;
+      }
+
+      .username {
+        padding: 0px 2px 5px;
+        margin: 0px 9px;
+        font-weight: 500;
+      }
+
+      .password {
+        padding: 2px 2px 3px;
+        font-weight: 500;
+      }
+
+      .email {
+        padding: 2px 2px 0px 3px;
+        font-weight: 500;
+      }
+
+      .text {
+        font-weight: 500;
+      }
+
+      .container {
+        border: 5px solid black;
+        border-radius: 30px;
+      }
+      h1 {
+        border: 2px solid black;
+        border-radius: 15px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+      }
+
+      .form {
+        margin: 0px 297px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 align="center">Get In Touch</h1>
+    <form
+      action="tut1.html"
+      align="center"
+      style="border: 2px solid black"
+      class="form"
+    >
+      <div class="username">
+        <label for="Username">Username :</label>
+        <input type="text" id="Username" placeholder="Username" required />
+      </div>
+
+      <div class="password">
+        <label for="Password">Password :</label>
+        <input type="password" id="Password" placeholder="Password" required />
+      </div>
+
+      <div class="email">
+        <label for="Email">Email :</label>
+        <input type="Email" id="Email" placeholder="Email" required />
+      </div>
+
+      <div>
+        <legend class="text">Gender :</legend>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="id.male" />
+        <label for="female" value="id.female">FeMale</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">others</label>
+        <input type="radio" id="female" name="gender" />
+      </div>
+
+      <div>
+        <legend class="text">Education :</legend>
+        <label for="10thclass">10th Class</label>
+        <input type="radio" id="10thclass" name="education" value="10thclass" />
+        <label for="graduate">Graduate</label>
+        <input type="radio" id="graduate" name="education" />
+      </div>
+
+      <div>
+        <legend class="text">City</legend>
+        <select id="city">
+          <option value="rj.kota">Kota</option>
+          <option value="rj.Jaipur">Jaipur</option>
+          <option value="rj.Jaisalmer">Jaisalmer</option>
+          <option value="rj.Jaisalmer">Baran</option>
+          <option value="rj.Jaisalmer">Barmer</option>
+          <option value="rj.Jaisalmer">Churu</option>
+        </select>
+      </div>
+
+      <div>
+        <legend class="text">Write about your Self...</legend>
+        <textarea name="text-area" id="message" cols="30" rows="3"></textarea>
+      </div>
+
+      <div>
+        <legend class="text">select Date :</legend>
+        <input type="date" name="date" />
+      </div>
+      <br />
+      <div>
+        <input type="Submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
