@@ -1,0 +1,40 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header2{
+    background-color: rgb(216, 219, 219);
+  }
+  
+  .section1 {
+    background-color: aqua;
+    height: 600px;
+    background-image: url(tesla1.jpg);
+    background-size: 1000px;
+  }
+
+  .section2 {
+    background-color: cadetblue;
+    background-image: url(tesla2.jpg);
+    height: 600px;
+    background-size: 1000px;
+  }
+
+  .section3 {
+    background-color: darkgray;
+    background-image: url(carimg3.jpg);
+    height: 600px;
+    background-size: 1070px;
+  }
+  .navsection{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+    margin: 0rem 24rem;
+
+  }
+  /* .li-gap{
+     column-gap: 20px;
+     display: flex;
+  } */
