@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-image: url(loginbackgroundimg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    padding: 15px;
+}
+
+.section{
+    border: 1px solid black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    float: right;
+    margin-right: 16rem;
+    margin-top: 15rem;
+    border-radius: 5px;
+    opacity: 0.8;
+    height:auto;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.user-pass{
+    text-align: center;
+    border-radius: 5px;
+}
+
+.login{
+    text-align: center;
+    padding: 14px;
+}
+
+.forgotpass{
+    text-align: center;
+    padding: 4px;
+    
+    
+}
+
+.inputuser-pass{
+
+    padding: 4px 5rem;
+    margin: 2px;
+}
+
+.input-login{
+    padding: 4px 9rem;
+    margin: 4px;
+}
+
+.text-decoration{
+    text-decoration: none;
+}
