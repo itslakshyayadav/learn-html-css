@@ -1,0 +1,22 @@
+{
+  "name": "learn-html-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itslakshyayadav/learn-html-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itslakshyayadav/learn-html-css/issues"
+  },
+  "homepage": "https://github.com/itslakshyayadav/learn-html-css#readme",
+  "dependencies": {
+    "@mdi/font": "^7.2.96"
+  }
+}

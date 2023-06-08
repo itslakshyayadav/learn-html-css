@@ -5,16 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="../icons/materialdesignicons.css" />
+
     <style>
       @font-face {
-        font-family: myFirstFont;
+        font-family: "myFirstFont";
         src: url(../fonts/Streetwear.otf);
       }
 
       html {
-        font-family: "Segoe UI", myFirstFont, Tahoma, Geneva, Verdana,
+        font-family: "Segoe UI", "myFirstFont", Tahoma, Geneva, Verdana,
           sans-serif;
         margin: 0;
+      }
+
+      .size-2rem {
+        font-size: 2rem;
+      }
+
+      .size-3rem {
+        font-size: 3rem;
       }
 
       .my-flexbox {
@@ -29,7 +39,7 @@
         height: 6rem;
         background-color: burlywood;
       }
-      
+
       .my-flexbox-grow {
         display: flex;
         margin-top: 2rem;
@@ -49,7 +59,6 @@
         flex-grow: 3;
       }
 
-
       .display-flex {
         display: flex;
       }
@@ -66,59 +75,62 @@
     </style>
   </head>
   <body>
-    <section>
+    <section style="padding: 3rem">
       <h1>Flexbox</h1>
+
+      <span class="mdi "></span>
+
+      <span class="mdi mdi-account"></span>
+      <span class="mdi mdi-alarm size-3rem"></span>
+      <span class="mdi mdi-account-cog-outline size-2rem"></span>
     </section>
 
     <div class="my-flexbox">
-        <div class="display-flex gap-1">
-            <div class="box">1</div>
-            <div class="box">
-                <p>VISA</p>
-                <P>..5677</P>
-            </div>
+      <div class="display-flex gap-1">
+        <div class="box">1</div>
+        <div class="box">
+          <p>VISA</p>
+          <p>..5677</p>
         </div>
-        <div class="box">3</div>
+      </div>
+      <div class="box">3</div>
     </div>
 
     <div class="my-flexbox">
-            <div class="box">1</div>
-            <div class="box">
-              2
-            </div>
-        <div class="box">3</div>
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
     </div>
 
     <div class="my-flexbox-grow">
-        <div class="box-1">1</div>
-        <div class="box-2">2</div>
-    <!-- <div class="box">3</div> -->
-</div>
+      <div class="box-1">1</div>
+      <div class="box-2">2</div>
+      <!-- <div class="box">3</div> -->
+    </div>
 
     <div class="menu-box">
-        <!-- search section starts here -->
-        <div>
-            <!-- <button type="button">
+      <!-- search section starts here -->
+      <div>
+        <!-- <button type="button">
                 Searc
             </button> -->
-            <input type="text" placeholder="Search">
-        </div>
-        <!-- search section ends here -->
+        <input type="text" placeholder="Search" />
+      </div>
+      <!-- search section ends here -->
 
-        <!-- Drodown filter section starts here -->
-        <div>
-            <button>Subtask</button>
-            <button>Me</button>
-            <button>Assignes</button>
-        </div>
-        <!-- Drodown filter section ends here -->
+      <!-- Drodown filter section starts here -->
+      <div>
+        <button>Subtask</button>
+        <button>Me</button>
+        <button>Assignes</button>
+      </div>
+      <!-- Drodown filter section ends here -->
 
-        <div>
-            <button>Share</button>
-            <button>Block</button>
-            <button>list</button>
-        </div>
-
+      <div>
+        <button>Share</button>
+        <button>Block</button>
+        <button>list</button>
+      </div>
     </div>
   </body>
 </html>
