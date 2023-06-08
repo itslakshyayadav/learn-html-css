@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Inherit Unset Revert</title>
+
+    <style>
+
+        html {
+            background-color: gray;
+            margin: 1rem;
+        }
+
+        body {
+            background-color: rgb(243, 182, 182);
+            padding: 1rem;
+        }
+
+        .box-1 {
+            width: 100px;
+            height: 100px;
+            background-color: beige;
+        }
+
+        section {
+            background-color: darkcyan;
+            padding: 3rem;
+            color: white;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        .box-1 {
+            width: 100px;
+            height: 100px;
+            /* color: inherit; */
+            background-color: beige;
+        }
+
+        .box-2 {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+
+        .box-3 {
+            width: 100px;
+            height: 100px;
+            background-color: initial;
+            color: initial;
+        }
+
+        .box-4 {
+            width: 100px;
+            height: 100px;
+            background-color: inherit;
+            border-width: 1px;
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body style="background-color: pink;">
+    <section>
+
+        <div class="box-1">
+            <h1>BOX 1</h1>
+        </div>
+        <div class="box-2">
+            <h1>BOX 2</h1>
+        </div>
+        <div class="box-3">
+            <h1>BOX 3</h1>
+        </div>
+        <div class="box-4">
+            <h1>BOX 4</h1>
+        </div>
+
+    </section>
+</body>
+</html>
