@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url(../fonts/Streetwear.otf);
+      }
+
+      html {
+        font-family: "Segoe UI", myFirstFont, Tahoma, Geneva, Verdana,
+          sans-serif;
+        margin: 0;
+      }
+
+      .my-flexbox {
+        background-color: rgb(20, 20, 20);
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .my-flexbox .box {
+        width: 6rem;
+        height: 6rem;
+        background-color: burlywood;
+      }
+      
+      .my-flexbox-grow {
+        display: flex;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: darkslategrey;
+      }
+
+      .my-flexbox-grow .box-1 {
+        background-color: crimson;
+        padding: 2rem;
+        flex-grow: 1;
+      }
+
+      .my-flexbox-grow .box-2 {
+        background-color: aquamarine;
+        padding: 2rem;
+        flex-grow: 3;
+      }
+
+
+      .display-flex {
+        display: flex;
+      }
+
+      .gap-1 {
+        column-gap: 1rem;
+      }
+
+      .menu-box {
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Flexbox</h1>
+    </section>
+
+    <div class="my-flexbox">
+        <div class="display-flex gap-1">
+            <div class="box">1</div>
+            <div class="box">
+                <p>VISA</p>
+                <P>..5677</P>
+            </div>
+        </div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="my-flexbox">
+            <div class="box">1</div>
+            <div class="box">
+              2
+            </div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="my-flexbox-grow">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+    <!-- <div class="box">3</div> -->
+</div>
+
+    <div class="menu-box">
+        <!-- search section starts here -->
+        <div>
+            <!-- <button type="button">
+                Searc
+            </button> -->
+            <input type="text" placeholder="Search">
+        </div>
+        <!-- search section ends here -->
+
+        <!-- Drodown filter section starts here -->
+        <div>
+            <button>Subtask</button>
+            <button>Me</button>
+            <button>Assignes</button>
+        </div>
+        <!-- Drodown filter section ends here -->
+
+        <div>
+            <button>Share</button>
+            <button>Block</button>
+            <button>list</button>
+        </div>
+
+    </div>
+  </body>
+</html>
