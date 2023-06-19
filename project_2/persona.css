@@ -1,0 +1,179 @@
+:root {
+  --color-primary: rgb(90, 112, 231);
+}
+
+.project-view {
+  background: linear-gradient(
+    to right,
+    rgb(135, 128, 231),
+    rgb(167, 137, 223),
+    rgb(198, 147, 216),
+    rgb(214, 149, 205),
+    rgb(229, 156, 185),
+    rgb(240, 157, 173)
+  );
+  padding: 0.8rem;
+}
+.title-name {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-taskbtn {
+  background-color: var(--color-primary);
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  color: white;
+  font-size: 10px;
+}
+.setting-icon {
+  color: rgb(114, 120, 128);
+  border: none;
+  background-color: white;
+  border-radius: 0.1rem;
+  padding: 0px 2px;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.dp1 {
+  width: 30px;
+  border-radius: 100%;
+  /* position: absolute; */
+  transform: translate(0px, 7px);
+}
+
+.dp2 {
+  width: 30px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-7px, 7px);
+}
+
+.dp3 {
+  width: 30px;
+  border-radius: 100%;
+
+  position: absolute;
+  transform: translate(18px, 7px);
+}
+
+.dp4 {
+  width: 30px;
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(43px, 7px);
+}
+
+.profile-text {
+  position: absolute;
+  transform: translate(82px, 16px);
+  font-size: 9px;
+  color: white;
+}
+
+.add-icon {
+  position: absolute;
+  transform: translate(223px, 12px);
+  padding: 5px;
+  border: none;
+  border-radius: 100%;
+  width: 27px;
+}
+.icon-side {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.progress {
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 6px;
+}
+.percentage-no {
+  transform: translate(181px, -15px);
+  position: absolute;
+  color: white;
+  font-size: 0.6rem;
+}
+
+/* *************************************** */
+/* 1 0.25rem */
+
+.bold {
+  font-weight: bold;
+}
+
+.color-white {
+  color: white;
+}
+
+.size-1\.25 {
+  font-size: 1.25rem;
+}
+
+.size-2 {
+  font-size: 2rem;
+}
+
+.size-2\.5 {
+  font-size: 2.5rem;
+}
+
+.size-3 {
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-3\/10 {
+  width: 30%;
+}
+
+.w-4\/10 {
+  width: 40%;
+}
+
+.btn-circle-md {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 0;
+  box-shadow: 1px 2px 4px 0px #888888;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
