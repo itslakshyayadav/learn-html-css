@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* line-height: 1.7; */
+}
+.line-height {
+  line-height: 1.7;
+}
+.icon-size-4rem {
+  font-size: 4rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.1em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/* ############################################# utility classes ############################################ */
+
+.container {
+  max-width: 1200px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.lg-heading {
+  font-size: 3.5rem;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+.bg-dark {
+  background-color: #263238;
+}
+.text-darkgreen {
+  color: #162c16;
+}
+.size-2\.5rem {
+  font-size: 2.5rem;
+}
+
+.text-red {
+  color: #e63946;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #333333;
+}
+.text-gray {
+  color: #555555;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.btn-primary {
+  background-color: #fff;
+  border-radius: 10em;
+}
+.btn-primary:hover {
+  background-color: #ddd;
+}
+.btn-secondary {
+  border: 2px solid #e63946;
+  border-radius: 1.5em;
+  color: #e63946;
+  background: #fff;
+}
+.btn-secondary:hover {
+  background-color: #fcf3f2;
+}
+
+.navbar a {
+  padding-bottom: 0.3rem;
+}
+.navbar a:hover {
+  border-bottom: 1px solid #d10909;
+}
+
+/* ############################################# header styling############################################## */
+.header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../website-img/header-image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.navbar {
+  /* border: 2px solid white; */
+  padding: 1rem;
+}
+
+.navbar .logo {
+  float: left;
+}
+
+.navbar .nav-items {
+  float: right;
+  margin-top: 1rem;
+}
+
+.navbar .nav-item {
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+/* using pseduo class */
+
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ########################################### header content styling ################################### */
+.header-content {
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-content p {
+  text-transform: uppercase;
+}
+
+/* ########################################## SHOWCASE SECTION STYLING##################################### */
+
+.showcase {
+  background: #ddd;
+  padding: 10rem 0;
+}
+.row {
+  height: 350px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.315);
+}
+.row1 {
+  margin-bottom: 10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+
+.row2 .img-box,
+.row1 .text-box {
+  float: right;
+  width: 50%;
+}
+
+.row .img-box {
+  height: 100%;
+}
+
+.row .text-box {
+  padding: 3rem;
+  /* height: 100%; */
+}
+
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ####################################### features sections stylings ##################################*/
+
+.features {
+  padding: 10rem 0;
+}
+
+.box-wrapper {
+  box-shadow: 5px 5px 10px rgba(102, 102, 102, 0.37);
+}
+
+.box {
+  width: 33.33333%;
+  float: left;
+  padding: 2rem;
+  text-align: center;
+}
+.box-1,
+.box-3 {
+  background: #263238;
+  color: #fff;
+}
+
+.box-2 {
+  background: linear-gradient(25deg, #d97882, #ee4758);
+  color: #fff;
+}
+
+.box-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ####################################### footer styling######################################## */
+
+.footer {
+  background: #263238;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+.social-media-icon span {
+  margin: 1rem;
+}
+
+/* ######################################## About section styling ################################## */
+.about {
+  padding: 5rem 0;
+}
+.about-heading::after {
+  content: "";
+  display: block;
+  border: 3px solid #e63946;
+  width: 100%;
+}
+
+.about-wrapper {
+  /* border: 2px solid black; */
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-wrapper .left {
+  float: left;
+  width: 50%;
+}
+.about-wrapper .right {
+  float: right;
+  width: 50%;
+}
+/* .about-wrapper::after {
+  content: "";
+  display: block;
+  clear: both; */
+
+.about-wrapper li::before {
+  content: "\2713";
+  color: #e63946;
+  font-weight: bold;
+  padding-right: 1rem;
+}
