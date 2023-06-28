@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Shrink Basis</title>
+
+
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+       
+        .grow-1 {
+            flex-grow:1;
+        }
+
+        .grow-2 {
+            flex-grow: 2;
+        }
+        
+        .basis-200 {
+            flex-basis: 200px;
+        }
+
+        .basis-1\/2 {
+            flex-basis: 50%;
+        }
+
+        .box {
+            background-color: beige;
+            padding-top: 10rem;
+            padding: 2rem;
+            padding-bottom: 10rem;
+            border-radius: 2rem;
+            border: 1px solid;
+            flex-basis: 500px;
+        }
+
+        .shrink-0 {
+            flex-shrink: 0;
+        }
+
+        .shrink-1 {
+            flex-shrink: 1;
+        }
+
+        .btn-primary {
+            padding: 2rem 4rem;
+            border-radius: 3rem;
+            border: none;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .flex {
+            display: flex;
+            min-height: 200px;
+            align-items: center;
+        }
+
+        
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="flex-container">
+        <div class="box shrink-0">I am sindie 2 sdoijdops pdjk djkoasd apsdkaps dkapsdk</div>
+        <div class="box">
+            I am sindie 2 sdoij dops pdjk djkoasdapsdkapsdkapsdkiodjhsaosd adijd asodj aosdjas iodjd jodij oajsd oasj doaj d asdjasdo 
+            <!-- <div style="width: 100%; background-color: aquamarine;">I am inside 2</div> -->
+        </div>
+        <!-- <div class="box">3</div> -->
+        <!-- <div class="box">4</div> -->
+        <!-- <div class="box" style="width: 50px;">5</div> -->
+        <!-- <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div> -->
+    </div>
+
+    <div class="flex justify-center">
+        <button class="btn-primary"> Click Me</button>
+        <p style="align-self: flex-start;">I am a p element</p>
+        <p >I am a p element</p>
+    </div>
+
+
+
+</body>
+</html>
