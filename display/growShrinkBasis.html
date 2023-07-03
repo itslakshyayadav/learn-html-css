@@ -10,7 +10,9 @@
         .flex-container {
             display: flex;
             /* flex-wrap: wrap; */
-        }
+           
+}
+        
        
         .grow-1 {
             flex-grow:1;
@@ -20,9 +22,9 @@
             flex-grow: 2;
         }
         
-        .basis-200 {
-            flex-basis: 200px;
-        }
+        .basis-160 { 
+            flex-basis: 460px;
+        } 
 
         .basis-1\/2 {
             flex-basis: 50%;
@@ -30,12 +32,12 @@
 
         .box {
             background-color: beige;
-            padding-top: 10rem;
-            padding: 2rem;
-            padding-bottom: 10rem;
+            display: flex;
+            padding: 1rem 1rem;
+            
             border-radius: 2rem;
             border: 1px solid;
-            flex-basis: 500px;
+            /* flex-basis: 160px; */
         }
 
         .shrink-0 {
@@ -47,9 +49,12 @@
         }
 
         .btn-primary {
-            padding: 2rem 4rem;
+            padding: 2rem 2rem;
             border-radius: 3rem;
             border: none;
+            /* justify-content: center;
+            align-items: center; */
+            margin: 10px auto;
         }
 
         .justify-center {
@@ -62,20 +67,34 @@
             align-items: center;
         }
 
+          /* .box-1{
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+         }  */
         
-        
+        .my-box {
+            padding: 1rem;
+            background-color: azure;
+            border: 1px solid;
+            /* display: flex; */
+        }
     </style>
 
 </head>
 <body>
     
     <div class="flex-container">
-        <div class="box shrink-0">I am sindie 2 sdoijdops pdjk djkoasd apsdkaps dkapsdk</div>
-        <div class="box">
+        <div class="box shrink-0 basis-160" >
+            <button type="button" class="btn-primary"> Click Me</button>
+            <button type="button" class="btn-primary"> Click Me</button>
+
+        </div>
+        <div class="box  grow-1">
             I am sindie 2 sdoij dops pdjk djkoasdapsdkapsdkapsdkiodjhsaosd adijd asodj aosdjas iodjd jodij oajsd oasj doaj d asdjasdo 
             <!-- <div style="width: 100%; background-color: aquamarine;">I am inside 2</div> -->
         </div>
-        <!-- <div class="box">3</div> -->
+        <div class="box  shrink-1"><button type="button">X</button></div>
         <!-- <div class="box">4</div> -->
         <!-- <div class="box" style="width: 50px;">5</div> -->
         <!-- <div class="box">6</div>
@@ -84,11 +103,20 @@
         <div class="box">9</div> -->
     </div>
 
-    <div class="flex justify-center">
+    <div class="my-box">
+        <div style="width: 200px; margin: auto;">
+            <button type="button" >Click Me</button>
+            <button type="button" >Click Me</button>
+        </div>
+        <!-- <button type="button" style="margin-left: auto; margin-right: auto;">Click Me</button> -->
+
+    </div>
+
+    <!-- <div class="flex justify-center">
         <button class="btn-primary"> Click Me</button>
         <p style="align-self: flex-start;">I am a p element</p>
         <p >I am a p element</p>
-    </div>
+    </div> -->
 
 
 
