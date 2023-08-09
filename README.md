@@ -21,7 +21,7 @@ I'll be demostrating that below.
 
 ## 3. Project Portfolio-card([Link](./project-portfolio-card/README.md))
 
-![Image](./project-Portfolio-card/project-portfolio-preview.jpg)
+![Image](./project-portfolio-card/project-portfolio-preview.jpg)
 
 ## 4. Project Payment-card([Link](./project-payment-card/README.md))
 ![Image](./project-payment-card/project-payment-preview.jpg)
